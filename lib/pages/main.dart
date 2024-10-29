@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:iiuc_student_portal/pages/animation.dart';
-import 'package:iiuc_student_portal/pages/test.dart';
+import 'package:iiuc_student_portal/pages/logo_animation.dart';
+import 'package:iiuc_student_portal/pages/whatever.dart';
 
 
 
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget{
     int i = 0;
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: AnimationWork(),
+      home: LogoAnimation(),
     );
   }
 }
