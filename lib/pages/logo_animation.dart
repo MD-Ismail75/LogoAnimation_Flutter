@@ -14,13 +14,13 @@ class _LogoAnimationState extends State<LogoAnimation> {
   Timer timer = Timer(Duration.zero,(){});
 
   bool shouldAnimate = false;
-  bool shoulShowText = false;
+  bool shouldShowText = false;
 
   Future<void> initAnimate() async{
     timer = Timer(const Duration(seconds: 1),(){
       setState(() {
         shouldAnimate = true;
-        shoulShowText = true;
+        shouldShowText = true;
       });
 
     });
@@ -94,7 +94,7 @@ class _LogoAnimationState extends State<LogoAnimation> {
                 ],
               ),
             ),
-            AnimatedOpacity(opacity: shoulShowText?1:0, duration: const Duration(milliseconds: 999),
+            AnimatedOpacity(opacity: shouldShowText?1:0, duration: const Duration(milliseconds: 999),
             child: Text("RIPPLES",
             style: TextStyle(
               fontSize: 31,
